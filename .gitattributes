@@ -1,2 +1,64 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Mogram
+    Billboard control system
+    Users
+    Data
+    Template file
+    Physical objects
+
+# (in)formal definition
+    Billboard control system is set of users, data, template file, Physical objects.
+
+# mathematical definition if line 8:
+    Billboard control system (BC) is set of users(U), data(D), template file(TF), Physical objects(PO).
+    BC = {U,D,TF,PO}
+
+
+# symbol table
+-----------------------------------------------------
+    Symbol		meaning
+    -----------	-----------
+    #		comment
+    BC		Billboard control system
+    U		users
+    D		data
+    TF		template file
+    PO		Physical objects
+    *		Countable object
+    ?		vagueness
+    <->		interaction
+    <?>		Unknown interaction
+    MRS		movie recommender system
+    D_E		External data from MRS
+    D_I		internal data from interview, …
+-----------------------------------------------------
+
+# Counting: countable or uncountable
+    Billboard control system (BC: *) is set of users(U: *), data(D: *), template file(TF: *), Physical objects(PO: *).
+
+# numerical domain for each magram:
+    BC: 1-N : N in natural number
+    U: 1-N : N in natural number
+    D: ? :
+    TF: ?
+    PH : ?
+
+
+
+
+# Interaction(s)
+BC = {U,D,TF,PO}
+	Each element has at least one interaction with another element in BC.
+	    Example:
+	        U <-> TF
+	        D <-> PO
+    #Semantics:
+        tructure: <mogram> <-> <mogram> … <-> <mogram> 
+        Concept: if <mogram_n> <-> <mogram_m>, there is a data passing between mogram
+D = { D_I,D_E}
+	Data is set of D_I and D_E
+	    Example:
+	        D <-> D_E
+    #Semantics:
+        Structure: <data> = <D_E1> + … + <D_E[n]>
+        Concept: if <data> <-> < D_E[n]>, mean D_E is the input and D is the set of inputs
+
